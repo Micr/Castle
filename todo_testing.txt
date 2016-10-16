@@ -1,0 +1,6 @@
+1. Mongoose.Schema
+2. Mongoose.model
+3. React routes
+4. browserHistory call in registerUser redirect
+5. test whether a saga have been called
+6. Test saga throws

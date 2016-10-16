@@ -1,0 +1,103 @@
+{
+  "name": "coursez",
+  "version": "1.0.0",
+  "description": "Isomorphic login app made with React and Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "SERVER=true node server/server.js",
+    "watch": "webpack --progress --colors --watch",
+    "build": "webpack --progress --display-modules --display-reasons --colors",
+    "dev": "nodemon -x 'node server/server.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true,
+      "jquery": true
+    },
+    "rules": {
+      "max-len": 0,
+      "comma-style": "off",
+      "one-var": [
+        2,
+        "never"
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "no-param-reassign": [
+        "error",
+        {
+          "props": false
+        }
+      ],
+      "new-cap": [
+        "error",
+        {
+          "capIsNew": false
+        }
+      ],
+      "no-shadow": "off",
+      "global-require": "off",
+      "consistent-return": 0,
+      "semi": 0
+    }
+  },
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.14.0",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "es6-promise": "^3.3.1",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
+    "eslint-plugin-react": "^6.2.0",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "express-validator": "^2.20.8",
+    "html-webpack-plugin": "^2.22.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mongodb": "^2.2.9",
+    "mongoose": "^4.6.0",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
+    "redux": "^3.5.2",
+    "redux-saga": "^0.11.1",
+    "webpack": "^2.1.0-beta.21"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "css-loader": "^0.24.0",
+    "file-loader": "^0.9.0",
+    "isomorphic-style-loader": "^1.0.0",
+    "react-addons-test-utils": "^15.3.2",
+    "style-loader": "^0.13.1"
+  }
+}

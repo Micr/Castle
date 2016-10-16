@@ -1,0 +1,11 @@
+/* === Register Page === */
+.register_page__register_form input {
+  display: block;
+}
+
+/* === Front Page == */
+.login_page__login_button {
+  height: 50px;
+  width: 200px;
+  background: red;
+}
